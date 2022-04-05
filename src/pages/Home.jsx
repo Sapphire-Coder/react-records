@@ -17,9 +17,8 @@ export default function Home() {
                     data.map((e, i ) => {
                         return (
                             <div key = {i}>
-                                <h2>{e.title}</h2>
-                                <h2>{e.cover}</h2>
-                                <img src = {`${e.cover}.jpg`} />
+                                <a href = {`/${e._id}`}><h2>{e.title}</h2></a>
+                                <img src = {e.cover} />
                                 <h2>{e.artist}</h2>
                                 <h2>{e.year}</h2>
                                 <h2>{e.genre}</h2>

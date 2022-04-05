@@ -22,7 +22,7 @@ export default function New() {
         <div>
             <form onSubmit = {newRecord}>
                 <input type = 'text' name = 'title' />
-                <input type = 'text' name = 'cover' />
+                <input type = 'url' name = 'cover' />
                 <input type = 'text' name = 'artist' />
                 <input type = 'number' name = 'year' />
                 <input type = 'text' name = 'genre' />
