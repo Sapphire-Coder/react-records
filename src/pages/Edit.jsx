@@ -28,11 +28,16 @@ export default function Edit() {
     return (
         <div>
             <form onSubmit = {updRecord}>
-                <input type = 'text' name = 'title' defaultValue = {data.title}/>
-                <input type = 'text' name = 'cover' defaultValue = {data.cover}/>
-                <input type = 'text' name = 'artist' defaultValue = {data.artist}/>
-                <input type = 'number' name = 'year' defaultValue = {data.year}/>
-                <input type = 'text' name = 'genre' defaultValue = {data.genre}/>
+                <label>Title: </label>
+                <input type = 'text' name = 'title' defaultValue = {data.title}/><br/>
+                <label>Cover Art: </label>
+                <input type = 'text' name = 'cover' defaultValue = {data.cover}/><br/>
+                <label>Artist: </label>
+                <input type = 'text' name = 'artist' defaultValue = {data.artist}/><br/>
+                <label>Year: </label>
+                <input type = 'number' name = 'year' defaultValue = {data.year}/><br/>
+                <label>Genre: </label>
+                <input type = 'text' name = 'genre' defaultValue = {data.genre}/><br/>
                 <input type = 'submit' />
             </form>
         </div>

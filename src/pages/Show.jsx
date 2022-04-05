@@ -18,12 +18,12 @@ export default function Show() {
     }
 
     return (
-        <div>
+        <div id = 'shPage'>
             <h1>{data.title}</h1>
             <img src = {data.cover} />
-            <h2>{data.artist}</h2>
-            <h2>{data.year}</h2>
-            <h2>{data.genre}</h2>
+            <h2>Artist: {data.artist}</h2>
+            <h2>Year: {data.year}</h2>
+            <h2>Genre: {data.genre}</h2>
             <button onClick = {delRecord}>Delete</button> <br/>
             <button onClick={() => navigate(`/${id}/edit`)}>Edit</button>
         </div>

@@ -11,17 +11,17 @@ export default function Home() {
 
     return (
         <div>
-            <h1>Records</h1>
+            <h1 id = 'header'>Records</h1>
             <div id = 'container'>
                 {
                     data.map((e, i ) => {
                         return (
-                            <div key = {i}>
+                            <div key = {i} className = 'albums'>
                                 <a href = {`/${e._id}`}><h2>{e.title}</h2></a>
                                 <img src = {e.cover} />
-                                <h2>{e.artist}</h2>
-                                <h2>{e.year}</h2>
-                                <h2>{e.genre}</h2>
+                                <h2>Artist: {e.artist}</h2>
+                                <h2>Year: {e.year}</h2>
+                                <h2>Genre: {e.genre}</h2>
                             </div>
                         )
                     })

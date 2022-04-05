@@ -21,12 +21,17 @@ export default function New() {
     return (
         <div>
             <form onSubmit = {newRecord}>
-                <input type = 'text' name = 'title' />
-                <input type = 'url' name = 'cover' />
-                <input type = 'text' name = 'artist' />
-                <input type = 'number' name = 'year' />
-                <input type = 'text' name = 'genre' />
-                <input type = 'submit' />
+                <label>Title: </label>
+                <input type = 'text' name = 'title'/><br/>
+                <label>Cover Art: </label>
+                <input type = 'url' name = 'cover'/><br/>
+                <label>Artist: </label>
+                <input type = 'text' name = 'artist'/><br/>
+                <label>Year: </label>
+                <input type = 'number' name = 'year'/><br/>
+                <label>Genre: </label>
+                <input type = 'text' name = 'genre'/><br/>
+                <input type = 'submit'/>
             </form>
         </div>
     )
